@@ -33,7 +33,7 @@ This project implements **Face Verification** using `insightface`. It extracts *
 
 4. Run the project:
    ```bash
-    jupyter notebook Face_Verification.ipynb #For verify 2 Face
+    jupyter notebook Face_Verification.ipynb #For verify 2 Faces
    ```
 ---
 ## Dependencies
