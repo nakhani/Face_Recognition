@@ -7,7 +7,7 @@ class FaceAuth:
     def __init__(self, app_path):
         self.face_id = FaceIdentification()
         self.app_path = app_path
-        self.cap = cv2.VideoCapture(0)  # Start webcam
+        self.cap = cv2.VideoCapture(0)  
 
     def authenticate(self):
         print("🔒 Face Authentication Started...")
@@ -48,7 +48,7 @@ class FaceAuth:
         subprocess.run(self.app_path, shell=True)
 
 if __name__ == "__main__":
-    # Example: Unlock Calculator app after authentication
+    
     app_path = "calc.exe"  # Windows Calculator (change for other OS/apps)
     auth_system = FaceAuth(app_path)
     auth_system.authenticate()

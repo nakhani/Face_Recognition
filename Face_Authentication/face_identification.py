@@ -51,12 +51,12 @@ class FaceIdentification:
                                 fontFace=cv2.FONT_HERSHEY_SIMPLEX, fontScale=3.2, 
                                 color=(0, 0, 255), thickness=4, lineType=cv2.LINE_AA)
                 
-        cv2.imwrite("output/result_image.jpg", self.input_image)
+        cv2.imwrite("result_image.jpg", self.input_image)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--image', type=str, default="input/image.jpg")
+    parser.add_argument('--image', type=str, default="image.jpg")
     parser.add_argument('--threshold', type=str, default=25)
     parser.add_argument('--update', action='store_true')
 
