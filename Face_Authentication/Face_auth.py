@@ -1,9 +1,7 @@
 import cv2
 import numpy as np
-from insightface.app import FaceAnalysis
-from create_face_bank import CreateFaceBank
 from face_identification import FaceIdentification
-import subprocess  # To launch applications
+import subprocess  
 
 class FaceAuth:
     def __init__(self, app_path):
@@ -19,7 +17,7 @@ class FaceAuth:
             if not ret:
                 break
 
-            # Detect face from webcam feed
+          
             self.face_id.input_image = frame
             self.face_id.results = self.face_id.app.get(frame)
             
@@ -36,7 +34,7 @@ class FaceAuth:
                             return
                 print("❌ Access Denied: Face not recognized.")
 
-            # Display webcam feed
+           
             cv2.imshow("Face Authentication", frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):  # Press 'q' to exit
                 break
