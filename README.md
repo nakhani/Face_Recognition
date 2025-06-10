@@ -1,6 +1,6 @@
 # **Face Recognition System**
 
-<img src= "face_recognition_image.png" width= "300">
+<img src= "image.gif">
 
 A comprehensive **Face Recognition System** using **InsightFace** for:
 - **Face Verification** (Confirm if two images belong to the same person)
