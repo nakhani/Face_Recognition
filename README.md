@@ -88,14 +88,14 @@ A comprehensive **Face Recognition System** using **InsightFace** for:
 4. Run the project:
    ```bash
     python create_face_bank.py #For creating 512D embedding vector 
-    python face_identification.py #For identifying person in an image
+    python face_identification.py #For identifying person in each image
     python Face_auth.py # For authorizing a person's face to log in
     python Face_verification.py #For verifying 2 persons
    ```
 
     ```bash
     jupyter notebook create_face_bank.ipynb #For creating 512D embedding vector 
-    jupyter notebook face_identification.ipynb #For identifying person in an image
+    jupyter notebook face_identification.ipynb #For identifying person in each image
     jupyter notebook Face_Verification.ipynb #For verifying 2 persons
    ```
 ---
