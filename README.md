@@ -1,4 +1,7 @@
 # **Face Recognition System**
+
+<img src= "face_recognition_image.png" width= "300">
+
 A comprehensive **Face Recognition System** using **InsightFace** for:
 - **Face Verification** (Confirm if two images belong to the same person)
 - **Face Identification** (Recognize individuals from a stored database)
@@ -40,7 +43,6 @@ A comprehensive **Face Recognition System** using **InsightFace** for:
   ```
   - If `--update` is used, **the face bank** updates automatically before identification.
 
-- Code is **Object-Oriented** using the `FaceIdentification` class.
 ---
 
 ### ✅ **Face ID (Smart Webcam-Based Password)**
@@ -48,3 +50,58 @@ A comprehensive **Face Recognition System** using **InsightFace** for:
 - Utilize face authentication for secure access to applications.
 - Face recognition as a **keyless login mechanism**.
 ---
+
+## 📌 Result
+
+- Input images:
+
+<img src= "Face_Identification/input/images.jpg" width= "300">
+
+<img src= "Face_Identification/input/images_4.jpg" width= "300">
+
+
+- Output of identification system:
+
+<img src= "Face_Identification/output/result_image.jpg" width= "300">
+
+<img src= "Face_Identification/output/result_image_4.jpg" width= "300">
+
+
+## How to Run the Code
+1. Clone the repository:
+
+   ```
+   https://github.com/nakhani/Face_Recognition_System.git
+   ```
+
+2. Navigate to the directory:
+
+   ```
+   Face_Recognition
+   ```
+
+3. Install the required packages:
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+4. Run the project:
+   ```bash
+    python create_face_bank.py #For creating 512D embedding vector 
+    python face_identification.py #For identifying person in an image
+    python Face_auth.py # For authorizing a person's face to log in
+    python Face_verification.py #For verifying 2 persons
+   ```
+
+    ```bash
+    jupyter notebook create_face_bank.ipynb #For creating 512D embedding vector 
+    jupyter notebook face_identification.ipynb #For identifying person in an image
+    jupyter notebook Face_Verification.ipynb #For verifying 2 persons
+   ```
+---
+## Dependencies
+- Python 3.x
+- OpenCv
+- NumPy
+- Insightface
+
